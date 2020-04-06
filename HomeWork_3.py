@@ -24,5 +24,9 @@ for i in range(len(new_text_list)): # Проходимся по списку с 
     words_count[new_text_list[i]] = new_text_list.count(new_text_list[i])
 print(words_count)
 
+# Задание 5. Вывести 5 наиболее часто встречающихся слов (sort) и количество разных слов в тексте (set).
+words_count_list=list(words_count.items()) # Преобразуем словарь в список
+# Сортируем элементы по кол-ву повторений (повторения под индексом 1) и указываем обратны порядок
+top_words=words_count_list.sort(key=lambda x: x[1], reverse=True)
 
-
+print(words_count_list[:5]) # Срезом выводим перве 5 элементов
