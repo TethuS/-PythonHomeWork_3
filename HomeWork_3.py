@@ -29,4 +29,4 @@ words_count_list=list(words_count.items()) # Преобразуем словар
 # Сортируем элементы по кол-ву повторений (повторения под индексом 1) и указываем обратны порядок
 top_words=words_count_list.sort(key=lambda x: x[1], reverse=True)
 
-print(words_count_list[:5]) # Срезом выводим перве 5 элементов
+print(words_count_list[:5]) # Срезом выводим первые 5 элементов
